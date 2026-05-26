@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.menu div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.menu li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
