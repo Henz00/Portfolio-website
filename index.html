@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Devsite - Henrik</title>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body id="page-top">
 
-        <section id="header">
+        <section id="header" class="">
             <div>
                 <nav>
                     <div class="menu">
@@ -25,7 +25,6 @@
                     </div>
                 </nav>
             </div>
-            <div class="divider" style="opacity:0.3;"></div>
         </section>
         
 
@@ -34,7 +33,7 @@
                 <img src="./images/profile_picture_b&w_cropped_1-1.jpg">
                 <div class="">
                     <h1>Henrik Bredahl Hansen</h1>
-                    <div class="divider" style="margin: 1rem 0; width: 80%"></div>
+                    <div class="divider-light" style="margin: 1rem 0; width: 80%"></div>
                     <h3>Software Developer</h3>
                 </div>
             </div>
@@ -47,10 +46,14 @@
                 </div>
             </section>
             
+            <!-- <div class="divider-dark" style="opacity:0.3;"></div> -->
+            
             <section id="skills">
                 <div class="container">
                     <h2>Skills</h2>
-                    <p>My range of skills is broad, part thanks to my choice of degree and part simply from the type of person I am.</p>
+                    <p>My broad range of skills is part thanks to my choice of degree and part simply from the type of person I am. Always curious about how things work means
+                        that I never stop learning new skills.
+                    </p>
                 </div>
             </section>
 
@@ -58,7 +61,10 @@
                 <div class="container">
                     <h2>Projects</h2>
                     <div class="card-container">
-                        <div class="card"><h3>Lightshow</h3></div>
+                        <div class="card">
+                            <h3>Lightshow</h3>
+                            <p>Project created during internship at Cadana. System for controlling led strips via a microcontroller.</p>
+                        </div>
                         <div class="card"><h3>Document template service</h3></div>
                         <div class="card"><h3>RpgTrade</h3></div>
                     </div>
