@@ -4,6 +4,7 @@ $color-text-secondary: #cbd5e1;
 
 $color-background-primary: #1e293b;
 $color-background-secondary: #2c3e50;
+$color-background-tertiary: #222;
 
 $color-accent: #3b82f6;
 
@@ -36,6 +37,23 @@ $color-accent: #3b82f6;
     background-color: white;
     width: 100%;
     justify-self: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    gap: 2rem;
+}
+
+.card {
+    max-width: 100%;
+    min-height: 10rem;
+    background-color: $color-accent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 img {
@@ -90,4 +108,14 @@ img {
         font-size: 2rem;
         color: $color-text-secondary;
     }
+}
+
+main {
+    h2, h3, p {
+        color: black;
+    }
+}
+
+#footer {
+    background-color: $color-background-primary;
 }
