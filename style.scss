@@ -48,6 +48,11 @@ body {
     color: $color-dark-text-primary;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
 .container {
     display: grid;
     gap: 2rem;
@@ -157,8 +162,96 @@ img {
 }
 
 main {
-    padding: 0 10rem;
+    margin: 0 10rem;
     color: black;
+}
+
+#skills {
+    background-color: $color-light-background-primary;
+
+    .container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .section-heading {
+        display: grid;
+        justify-items: center;
+        gap: 0.75rem;
+        max-width: 70%;
+
+        p {
+            color: $color-light-text-secondary;
+            line-height: 1.7;
+        }
+    }
+
+    .section-label {
+        color: $color-accent;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.16rem;
+        text-transform: uppercase;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 70rem;
+        text-align: left;
+    }
+
+    .skill-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0.75rem 2rem rgba(30, 41, 59, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: translateY(-0.35rem);
+            box-shadow: 0 1rem 2.5rem rgba(30, 41, 59, 0.14);
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: $color-light-text-secondary;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    }
+
+    .skill-number {
+        color: $color-accent;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: auto;
+        padding-top: 0.5rem;
+
+        li {
+            padding: 0.45rem 0.7rem;
+            background-color: rgba(59, 130, 246, 0.1);
+            border-radius: 2rem;
+            color: #245fad;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
 }
 
 #footer {
