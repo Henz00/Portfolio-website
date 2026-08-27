@@ -403,5 +403,54 @@ main {
 
 
 #footer {
-    background-color: $color-dark-background-primary;
+    background-color: $color-dark-background-primary;  
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5% 20%;
+        text-align: left;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 0.75rem;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            color: $color-dark-text-secondary;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            fill: white;
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+
 }
