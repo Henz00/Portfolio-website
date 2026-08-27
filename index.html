@@ -42,8 +42,21 @@
         <main>
             <section id="about">
                 <div class="container">
-                    <h2>About</h2>
-                    <p>I am a dedicated learner and passionate problem solver.</p>
+                    <div class="about-content">
+                        <h2>Curious by nature, a problem-solver at heart.</h2>
+                        <p class="about-intro">
+                            I&rsquo;m Henrik, a software developer who enjoys understanding how things work and turning that knowledge into useful software.
+                        </p>
+                        <p>
+                            After graduating in Game Development and Learning Technology from the University of Southern Denmark, I&rsquo;m now looking for a place where I can apply my skills, continue to grow, and help build something meaningful. 
+                            <br><br>
+                            Problem-solving has fascinated me from an early age. Whether through Rubik&rsquo;s cubes, physical puzzles, video games, or, eventually, programming. That curiosity still shapes how I approach my work today. I enjoy exploring unfamiliar technologies, breaking complex problems into manageable pieces, and following an idea all the way from an early experiment to a working solution.
+                            <br><br>
+                            As a colleague, I value openness, reliability, and sharing knowledge. I&rsquo;m not afraid to ask questions when something is unclear, and I enjoy learning from the people around me while contributing my own perspective and experience.
+                            <br><br>
+                            Away from the keyboard, you&rsquo;ll often find me bouldering, training for a triathlon, playing the piano, reading, or getting far too invested in a board game.
+                        </p>
+                    </div>
                 </div>
             </section>
             
@@ -53,7 +66,7 @@
                 <div class="container">
                     <div class="section-heading">
                         <h2>Skills</h2>
-                        <p>I enjoy turning ideas into reliable, user-friendly software. My degree has given me a broad technical foundation, while curiosity keeps me learning and improving.</p>
+                        <p>I enjoy the problem solving process of turning ideas into reality. Thanks to my degree and natural curiosity I have the skills to do that.</p>
                     </div>
 
                     <div class="skills-grid">
@@ -62,7 +75,7 @@
                             <p>Building structured applications across the frontend, backend and everything in between.</p>
                             <ul class="skill-list" aria-label="Development skills">
                                 <li>C#</li>
-                                <li>JavaScript</li>
+                                <li>Typescript</li>
                                 <li>HTML &amp; CSS</li>
                                 <li>SQL</li>
                                 <li>REST APIs</li>
@@ -98,14 +111,86 @@
 
             <section id="projects">
                 <div class="container">
-                    <h2>Projects</h2>
-                    <div class="card-container">
-                        <div class="card">
-                            <h3>Lightshow</h3>
-                            <p>Project created during internship at Cadana. System for controlling led strips via a microcontroller.</p>
-                        </div>
-                        <div class="card"><h3>Document template service</h3></div>
-                        <div class="card"><h3>RpgTrade</h3></div>
+                    <div class="project-heading">
+                        <h2>Projects</h2>
+                        <p>A few projects that challenged me to learn new technologies, solve practical problems and turn ideas into working software.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-content">
+                                <span class="project-type">Embedded system</span>
+                                <h3>Lightshow</h3>
+                                <p>Created during my internship at Cadana, Lightshow is a system for controlling LED strips through a microcontroller. It gave me the chance to connect software with physical hardware and create configurable lighting effects.</p>
+                                <div class="project-skills">
+                                    <h4>Skills used</h4>
+                                    <ul aria-label="Skills developed while building Lightshow">
+                                        <li>Microcontrollers</li>
+                                        <li>Hardware integration</li>
+                                        <li>Debugging</li>
+                                        <li>Prototyping</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <footer class="project-links">
+                                <a class="project-link"
+                                    href="https://github.com/Henz00/Lightshow"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View source
+                                </a>
+                            </footer>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-content">
+                                <span class="project-type">Web service</span>
+                                <h3>Document template service</h3>
+                                <p>A service designed to make creating consistent documents easier by separating reusable templates from their content. The main challenge was finding a workflow that stayed simple while keeping document generation maintainable.</p>
+                                <div class="project-skills">
+                                    <h4>Skills used</h4>
+                                    <ul aria-label="Skills developed while building the document template service">
+                                        <li>Backend development</li>
+                                        <li>API design</li>
+                                        <li>Data modelling</li>
+                                        <li>Testing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <footer class="project-links">
+                                <a class="project-link"
+                                    href="https://github.com/Henz00/document-to-pdf-service"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View source
+                                </a>
+                            </footer>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-content">
+                                <span class="project-type">Web application</span>
+                                <h3>RpgTrade</h3>
+                                <p>A marketplace concept for role-playing game items, built around making listings easy to browse and manage. I used it to explore the everyday decisions behind a practical full-stack application.</p>
+                                <div class="project-skills">
+                                    <h4>Skills used</h4>
+                                    <ul aria-label="Skills developed while building RpgTrade">
+                                        <li>.NET</li>
+                                        <li>Full-stack development</li>
+                                        <li>SQL</li>
+                                        <li>Authentication</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <footer class="project-links">
+                                <a class="project-link"
+                                    href="https://github.com/Henz00/RpgTrade"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View source
+                                </a>
+                            </footer>
+                        </article>
                     </div>
                 </div>
             </section>

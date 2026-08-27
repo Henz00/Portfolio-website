@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* VARIABLES */
 /* box-shadow: 0 0 20px rgba(59,130,246,0.15); */
 /* DEFAULTS */
@@ -56,26 +57,6 @@ h2 {
   justify-self: center;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
-  gap: 2rem;
-}
-
-.card {
-  max-width: 100%;
-  min-height: 10rem;
-  background-color: #3b82f6;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
-}
-
 img {
   max-width: 100%;
   max-height: 100%;
@@ -87,11 +68,11 @@ img {
   top: 0;
   background-color: #1e293b;
   color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3 ease;
 }
-#header.scrolled {
-  background-color: white;
-  color: black;
+#header.scrolled .brand {
+  font-size: 1.5rem;
 }
 #header .menu {
   display: flex;
@@ -99,7 +80,7 @@ img {
   padding: 2rem;
   justify-content: space-between;
 }
-#header .brand a {
+#header .brand {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -133,6 +114,38 @@ img {
 main {
   margin: 0 10rem;
   color: black;
+}
+
+#about .container {
+  justify-items: start;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+#about .about-content {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 44rem;
+  text-align: left;
+}
+#about .about-content h2 {
+  max-width: 38rem;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+}
+#about .about-content p {
+  color: #475569;
+  line-height: 1.8;
+}
+#about .about-content .about-intro {
+  color: #1e293b;
+  font-size: 1.15rem;
+}
+#about .section-label {
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
 }
 
 #skills {
@@ -209,6 +222,112 @@ main {
   color: #245fad;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+#projects .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#projects .project-heading {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  max-width: 46rem;
+}
+#projects .project-heading p {
+  color: #111;
+  line-height: 1.7;
+}
+#projects .section-label {
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+}
+#projects .projects-grid {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 62rem;
+  text-align: left;
+}
+#projects .project-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  min-width: 0;
+  padding: 2rem;
+  background-color: white;
+  border-left: 3px solid transparent;
+  color: #000;
+  box-shadow: 0 0.35rem 1.25rem rgba(30, 41, 59, 0.07);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+#projects .project-card:hover {
+  border-left-color: #3b82f6;
+  transform: translateX(0.25rem);
+}
+#projects .project-type {
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+#projects .project-content {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 43rem;
+}
+#projects .project-content h3 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+#projects .project-content h4 {
+  margin-bottom: 0.5rem;
+  color: #475569;
+  font-size: 0.7rem;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+#projects .project-content p {
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+#projects .project-skills {
+  margin-top: 0.4rem;
+}
+#projects .project-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+#projects .project-skills li {
+  color: #475569;
+  font-size: 0.8rem;
+}
+#projects .project-skills li:not(:last-child)::after {
+  margin-left: 0.5rem;
+  color: #94a3b8;
+  content: "·";
+}
+#projects .project-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+#projects .project-link {
+  color: #3b82f6;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+#projects .project-link:is(a):hover {
+  text-decoration: underline;
+}
+#projects .project-link.unavailable {
+  color: #94a3b8;
+  font-weight: 400;
 }
 
 #footer {
