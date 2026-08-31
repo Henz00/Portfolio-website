@@ -125,11 +125,11 @@ main {
 #about .about-content {
   display: grid;
   gap: 1.25rem;
-  max-width: 44rem;
+  padding: 0 10%;
   text-align: left;
 }
 #about .about-content h2 {
-  max-width: 38rem;
+  max-width: 42rem;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.15;
 }
@@ -314,6 +314,7 @@ main {
 }
 #projects .project-links {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   padding-left: 2rem;
@@ -335,7 +336,7 @@ main {
   background-color: #1e293b;
 }
 #footer .container {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 5% 20%;
   text-align: left;
 }
